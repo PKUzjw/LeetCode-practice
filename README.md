@@ -1,2 +1,3 @@
 # LeetCodePractice
-This is the codes I made on LeetCode.
+This is the codes I program on LeetCode using Python and C++.
+
