@@ -1,3 +1,4 @@
+//用Hashmap记录滑动窗口中字符串和位置的对应关系，接着维护滑动窗口
 class Solution {
 public:
     int lengthOfLongestSubstring(string s) {
