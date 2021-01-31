@@ -8,13 +8,13 @@ public:
         //一般处理
         int count=0;
         for(int i=1;i<size;i++){
-            if(nums[i-1]>nums[i]){ //头尾元素对以及有药可救的情况
+            if(nums[i-1]>nums[i]){
                 count++; //记录逆序数数量
             }
             if(count>1){ //判断
                 return false;
             }
-            if(i>1&&i<size-1&&nums[i+1]<nums[i-1]&&nums[i-2]>nums[i]){ //无力回天
+            if(i>1&&i<size-1&&nums[i+1]<nums[i-1]&&nums[i-2]>nums[i]){
                 return false;
             }
         }

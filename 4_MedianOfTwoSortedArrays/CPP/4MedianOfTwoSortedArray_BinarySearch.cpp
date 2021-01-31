@@ -1,3 +1,8 @@
+[[maybe_unused]] static const auto _ = []() {
+	std::ios_base::sync_with_stdio(false);
+	std::cin.tie(nullptr);
+	return 0;
+}();
 class Solution {
 public:
     double findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2) {
@@ -8,7 +13,7 @@ public:
         int k = (L+1) / 2; //总共左边需要多少个元素
         int iMin = 0, iMax = m;
         while (iMin <= iMax) {
-            int i = (iMin + iMax) / 2;
+            int i = iMin + (iMax-iMin) / 2;
             int j = k - i;
             if (i < iMax && nums2[j-1] > nums1[i]){
                 iMin = i + 1; // i is too small
